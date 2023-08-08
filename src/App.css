@@ -1,0 +1,9 @@
+.App {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  inline-size: 480px;
+  margin-inline: auto;
+  padding: 20px;
+  background: #e8e8e841;
+}

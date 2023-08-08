@@ -1,0 +1,21 @@
+.Counter {
+  --size: 52px;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  border: 2px solid currentColor;
+  border-radius: 8px;
+  block-size: var(--size);
+  inline-size: var(--size);
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 900;
+  color: #1b88c278;
+  filter: drop-shadow(0 0 2px #0f4c586e)
+  transition: all 450ms ease-out
+
+  &:hover:not(:disabled) {
+    color: #1b88c2ff
+    filter: drop-shadow(0 2px 2px #0f4c586e)
+  }
+}
