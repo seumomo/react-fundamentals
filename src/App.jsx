@@ -1,21 +1,10 @@
-// import Logo from './Logo';
-import './App.css';
-import { useState } from 'react';
-import Counter from './Counter';
+import Gallery from './components/Gallery';
 
 function App() {
-  const list = Array(3).fill(null);
-
-  const [count, setCount] = useState(0);
-
-  const handleCountUp = () => setCount(count + 1);
-
   return (
     <div className="App">
-      {list.map((_, index) => (
-        // <Logo key={index} />
-        <Counter key={index} count={count} onCountUp={handleCountUp} />
-      ))}
+      <h1>React 컴포넌트</h1>
+      <Gallery />
     </div>
   );
 }
